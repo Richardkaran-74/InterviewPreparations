@@ -1,0 +1,15 @@
+from collections import Counter
+def sockMerchant(c):
+    sum = 0
+    for i in c:
+        #pairs will be compare and add
+        sum += c[i]//2
+    return sum
+
+n = int(input())
+
+ar = Counter(map(int, input().rstrip().split()))
+
+result = sockMerchant(ar)
+
+print(result)    
